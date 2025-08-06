@@ -13,7 +13,9 @@ The objective is to provide business insights into sales performance, customer b
    ~ Business Owners (Shopify Store) looking for analytical insights.
 
    ~ Decision Makers & Sales Teams aiming to optimize product strategies.
+   
 
+**>Key Deliverable:**
 
 | Key Deliverable                  | Description                                                                                                                                |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
