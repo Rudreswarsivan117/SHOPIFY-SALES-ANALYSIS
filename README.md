@@ -70,6 +70,97 @@ The objective is to provide business insights into sales performance, customer b
 **>Page Layout:** 
 ~ A double-page layout is designed for presenting all sales performance insights in an easy-to-understand format.
 
+**PAGE 1:**
+<img width="1362" height="768" alt="Image" src="https://github.com/user-attachments/assets/7c787f0c-6203-4f65-92f3-ea5c98df9a64" />
+
+**PAGE2:**
+<img width="1357" height="715" alt="Image" src="https://github.com/user-attachments/assets/f8a6d451-c725-42c0-9dea-11cba355e71e" />
+
+## 5. Data Analysis:
+
+**>Transformation:**
+
+Data Cleaning	,Data Type Corrections	,Date Transformation	,Customer Classification, Calculated Columns in Power BI, SQL Views for KPIs And Queries	, Filtering & Contextual Slicing, Product Affinity Preparation.
+
+**>Calculated Fields:**
+
+**DAX Functions:** SUM, COUNT, SELECTEDVALUE, DISTINCTCOUNT, DATEDIFF, CALCULATE, MIN, MAX, ALLEXCEPT, IF, FILTER. 
+
+## 6. Challenges and Solutions:
+
+**Challenge 1:** 
+
+Problem: The raw dataset did not have a clear indicator for "New" or "Repeat" customers. Identifying repeat purchases required analyzing purchase history per Customer ID across multiple orders.
+
+Solution: Used SQL CTEs (Common Table Expressions) to classify customers based on their order count:
+
+     ~ Customers with Order Count = 1 were labeled as "New Customers".
+
+     ~ Customers with Order Count > 1 were labeled as "Repeat Customers".
+
+**Challenge 2:**
+
+Problem: Needed to calculate the number of days between a customer’s first and last order, which is not straightforward row-wise.
+
+Solution:
+
+Used MIN() and MAX() aggregation functions on Invoice Dates grouped by Customer_ID and applied DATEDIFF() to compute time gaps.
+
+**Challenge 3:**
+
+Problem: Large datasets (thousands of rows) slowed down visuals and interactions.
+
+Solution:
+
+ ~ Used SQL Views to Pre-Aggregate KPIs before importing into Power BI.
+
+  ~ Reduced dataset columns in Power Query Editor to only relevant fields.
+
+  ~Optimized DAX measures using CALCULATE with FILTER instead of IFs.
+
+## Usage:
+
+**1.Sales Performance Monitoring.**
+
+**2.Customer Segmentation.**
+
+**3.Product Performance & Sales Contribution.**
+
+**4.Geographical Sales Distribution.**
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
 
 
 
